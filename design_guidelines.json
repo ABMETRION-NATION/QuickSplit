@@ -1,0 +1,109 @@
+{
+  "theme_strategy": {
+    "theme": "Light & Dark Mode (User Toggleable)",
+    "archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "rationale": "An expense utility app must prioritize trust, clarity, and authority. The design leverages 'Swiss Brutalism' with stark contrasts, removing decorative elements to focus entirely on numbers and user balances. Function is the aesthetic."
+  },
+  "colors": {
+    "light": {
+      "background": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "primary": "#002BF6",
+      "primary_hover": "#0022C4",
+      "owes_me": "#00C853",
+      "i_owe": "#FF3B30",
+      "text_main": "#111111",
+      "text_muted": "#737373",
+      "border": "#E5E5E5"
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "surface": "#141414",
+      "primary": "#3A86FF",
+      "primary_hover": "#2563EB",
+      "owes_me": "#06D6A0",
+      "i_owe": "#EF233C",
+      "text_main": "#F5F5F5",
+      "text_muted": "#A3A3A3",
+      "border": "#262626"
+    }
+  },
+  "typography": {
+    "headings_family": "Chivo, sans-serif",
+    "body_family": "IBM Plex Sans, sans-serif",
+    "hierarchy": {
+      "h1": "text-4xl tracking-tighter font-black",
+      "h2": "text-2xl tracking-tight font-bold",
+      "h3": "text-xl font-bold",
+      "body": "text-base leading-relaxed font-normal",
+      "overline": "text-xs uppercase tracking-[0.2em] font-medium text-muted",
+      "balance_large": "text-5xl font-black tracking-tighter"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "w-full max-w-md mx-auto min-h-screen relative pb-24 bg-background",
+    "padding": "px-6 py-8",
+    "cards": "border border-border bg-surface p-6 rounded-none sm:rounded-xl shadow-none",
+    "lists": "flex flex-col gap-6",
+    "bottom_nav": "fixed bottom-0 left-0 right-0 max-w-md mx-auto h-20 bg-surface/80 backdrop-blur-xl backdrop-saturate-150 border-t border-border flex justify-around items-center z-50 pb-safe"
+  },
+  "components": {
+    "buttons": {
+      "primary": "w-full h-14 bg-primary text-white hover:bg-primary_hover hover:text-white font-bold rounded-xl flex items-center justify-center active:scale-[0.98] transition-all",
+      "secondary": "w-full h-14 bg-transparent border border-border text-text_main hover:bg-border/20 hover:text-text_main font-bold rounded-xl flex items-center justify-center active:scale-[0.98] transition-all"
+    },
+    "inputs": {
+      "text": "w-full h-14 bg-surface border border-border rounded-xl px-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all",
+      "amount": "w-full h-24 bg-transparent border-b-2 border-border text-center text-5xl font-black focus:border-primary outline-none tracking-tighter"
+    },
+    "avatars": {
+      "style": "h-12 w-12 rounded-full object-cover border-2 border-surface bg-border"
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "instructions": "Use lucide-react for all interface icons. Keep stroke-width consistent (e.g., 2px)."
+  },
+  "screens": {
+    "Home": {
+      "layout": "Massive total balance at the top center. Two quick action buttons below (Add Expense, Settle). Below that, a list of recent activity using the avatar on the left, name/title centered, and amount (colored green or red depending on flow) on the right.",
+      "testing_id": "home-screen"
+    },
+    "Groups": {
+      "layout": "Bento-style grid. Each group card shows a bold group name, member count overline, and the user's current net balance in that group. High contrast 1px borders.",
+      "testing_id": "groups-screen"
+    },
+    "Add_Expense": {
+      "layout": "Focus-first layout. Large amount input at the top. Segmented controls for Currency (USD/EUR/INR) and Split Type (Even/Custom). Multi-select list of participants with toggle checks.",
+      "testing_id": "add-expense-screen"
+    },
+    "Balances": {
+      "layout": "Two distinct sections: 'You Owe' and 'You are Owed'. Each row presents a participant avatar, name, exact amount, and a 'Settle' button. Use pure Swiss design: red text for debts, green text for credits.",
+      "testing_id": "balances-screen"
+    },
+    "Settings": {
+      "layout": "List interface. Dark/Light mode toggle. Currency selector. Social sign-in placeholders styled as full-width secondary buttons with brand logos (icons). Seed/Clear Data buttons placed at the bottom.",
+      "testing_id": "settings-screen"
+    }
+  },
+  "media_urls": {
+    "avatars": [
+      "https://images.unsplash.com/photo-1717196214699-6bb84568ad5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMGZhY2UlMjBwaG90b3xlbnwwfHx8fDE3NzY0NDQwOTB8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1645388195766-45d19288e2b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGZhY2UlMjBwaG90b3xlbnwwfHx8fDE3NzY0NDQwOTB8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1671820052350-038043ab430e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxwb3J0cmFpdCUyMGZhY2UlMjBwaG90b3xlbnwwfHx8fDE3NzY0NDQwOTB8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1712599982295-1ecff6059a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzc2NDQ0MDkzfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1619950514689-96f890058677?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzc2NDQ0MDkzfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1622812947502-0a643f17387e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MHx8fHwxNzc2NDQ0MDkzfDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "empty_states": "Do not use placeholder images. If empty, use abstract geometric patterns constructed purely with Tailwind/CSS, or large muted Lucide icons."
+  },
+  "instructions_to_main_agent": [
+    "This is an Android-first mobile web app. Maintain a max-width of `max-w-md` horizontally centered (`mx-auto`) to simulate a phone form factor on desktop screens. Ensure `pb-24` on main content so the fixed bottom navigation doesn't obscure content.",
+    "Data Test IDs: ALL interactive elements (buttons, inputs, bottom nav icons, expense list items) MUST include a `data-testid` attribute for robust testing. Example: `data-testid='home-tab-button'`.",
+    "State Management: Core functionality must work offline/without backend. Use React Context or Zustand to manage global states (Users, Groups, Expenses, Balances, Selected Currency, Theme).",
+    "Currency Formatting: All amounts must be formatted according to the user's selected currency (USD/EUR/INR) dynamically. Do not hardcode currency symbols.",
+    "Use Shadcn UI components for dropdowns, tabs, and modals, but strip away the default Vercel-look to match the high-contrast brutalist aesthetic defined here.",
+    "Ensure the 'Seed Demo Data' button utilizes the media URLs provided in this file to construct realistic avatar profiles.",
+    "Animations: Keep motion minimal. Only use micro-interactions (e.g. `active:scale-[0.98]`) for button feedback."
+  ]
+}
